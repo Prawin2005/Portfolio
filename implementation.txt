@@ -1,0 +1,1451 @@
+# MASTER PORTFOLIO — FULL IMPLEMENTATION PROMPT
+
+You are a senior Creative Frontend Engineer, UI/UX Designer, Motion Designer, and AI Engineer.
+
+Build a premium, production-ready personal portfolio website for **Prawin Lakhman**, an AI Engineer / Python Developer focused on AI/ML, Generative AI, RAG, Agentic AI, and cloud-based intelligent applications.
+
+This is NOT a generic developer portfolio.
+
+The website should feel like a **high-end interactive digital experience** that demonstrates the developer's actual engineering and AI capabilities.
+
+The design philosophy should be:
+
+> Cinematic + futuristic + minimal + technical + premium + highly interactive
+
+Use the provided reference portfolio:
+
+https://github.com/princekumar-dev74/portfolio-v1
+
+as a **visual and interaction reference only**.
+
+Do NOT clone the website.
+Do NOT reproduce its code.
+Do NOT copy its exact layouts, assets, text, branding, or visual identity.
+
+Use it only as inspiration for the level of polish, 3D interaction, motion, and overall portfolio quality.
+
+Also use the provided **fluid/splash cursor reference video** as inspiration for the cursor interaction.
+
+---
+
+# 1. CORE OBJECTIVE
+
+The portfolio must communicate within the first few seconds:
+
+1. Who Prawin is
+2. What he does
+3. What technologies he works with
+4. That he can build real AI systems
+5. That he understands both frontend and backend engineering
+6. That he has practical GenAI/cloud experience
+
+The site should make a recruiter think:
+
+> "This person doesn't just know AI terminology. He actually builds systems."
+
+The website itself should feel like an example of his engineering ability.
+
+---
+
+# 2. TECH STACK
+
+Use:
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* GSAP
+* GSAP ScrollTrigger
+* Framer Motion where appropriate
+* Three.js
+* React Three Fiber
+* Drei
+* Lenis or another smooth-scroll solution
+* Lucide React for icons
+
+For the AI section:
+
+* FastAPI
+* RAG
+* LLM API
+* Streaming responses
+
+Backend should be separated cleanly from the frontend.
+
+Do NOT introduce unnecessary libraries.
+
+Use WebGL/GLSL where it provides a meaningful visual benefit.
+
+---
+
+# 3. DESIGN LANGUAGE
+
+## Overall appearance
+
+Use a premium dark interface.
+
+Avoid:
+
+* generic SaaS layouts
+* excessive glassmorphism
+* excessive neon
+* random glowing cubes
+* generic AI robot imagery
+* template-like cards
+* excessive rounded cards
+* unnecessary gradients everywhere
+
+The website should feel intentional.
+
+Use:
+
+* deep black / near-black background
+* subtle off-white typography
+* restrained accent colors
+* subtle gradients
+* fine borders
+* atmospheric lighting
+* soft grain/noise
+* large typography
+* negative space
+* depth
+* cinematic transitions
+
+The design should feel closer to:
+
+Creative developer portfolio
++
+AI laboratory
++
+premium product website
+
+---
+
+# 4. GLOBAL INTERACTION SYSTEM
+
+Create a global interaction layer.
+
+It should include:
+
+## Custom fluid cursor
+
+Use the provided splash/fluid cursor reference as inspiration.
+
+The cursor should:
+
+* follow mouse movement smoothly
+* have a glowing central point
+* produce a fluid/particle-like trail
+* stretch according to movement velocity
+* dissipate naturally
+* feel organic rather than like simple DOM particles
+* react to acceleration
+* have subtle color variation
+* remain performant
+
+Preferred implementation:
+
+WebGL / shader-based effect.
+
+Do not create hundreds of DOM elements for the trail.
+
+The effect should be subtle enough that it does not interfere with readability.
+
+### Cursor states
+
+Normal:
+
+Small fluid glow.
+
+Fast movement:
+
+Longer fluid trail.
+
+Hovering interactive element:
+
+Cursor expands slightly.
+
+Hovering project:
+
+Cursor changes behavior subtly.
+
+Click:
+
+Small fluid splash/ripple.
+
+Text:
+
+Optional slight cursor attraction.
+
+Buttons:
+
+Optional magnetic cursor effect.
+
+### Mobile
+
+Do NOT show the desktop cursor system on touch devices.
+
+Provide an appropriate mobile experience instead.
+
+---
+
+# 5. GLOBAL MOTION PRINCIPLES
+
+Animations should tell a story.
+
+Do not animate everything.
+
+Use:
+
+* opacity
+* transform
+* scale
+* rotation
+* blur
+* clip-path
+* masking
+* parallax
+* velocity-based movement
+* stagger
+* pinned scroll sections
+
+Animations should have:
+
+* natural easing
+* controlled duration
+* smooth interpolation
+* no excessive bouncing
+* no distracting looping
+
+Avoid:
+
+* animation overload
+* constant spinning
+* excessive floating
+* random particles everywhere
+
+The portfolio should feel expensive, not chaotic.
+
+---
+
+# 6. PAGE STRUCTURE
+
+Build the website with these major sections:
+
+1. Loading Experience
+2. Navigation
+3. Hero
+4. About
+5. Skills / AI Tech Universe
+6. Experience
+7. Featured Projects
+8. AI Lab
+9. Engineering Process
+10. Achievements
+11. Contact
+12. Footer
+
+---
+
+# 7. LOADING EXPERIENCE
+
+Create a short premium loading sequence.
+
+Possible concept:
+
+Display:
+
+PRAVIN
+
+then:
+
+AI ENGINEER
+
+then transition smoothly into the main experience.
+
+Do not create a long loading screen.
+
+Target:
+
+1–2 seconds maximum when possible.
+
+If assets are already cached, minimize or skip unnecessary loading.
+
+The loading experience should not hurt performance.
+
+---
+
+# 8. NAVIGATION
+
+Create a minimal floating navigation.
+
+Navigation:
+
+* Home
+* About
+* Experience
+* Projects
+* AI Lab
+* Contact
+
+Add:
+
+* Resume
+* GitHub
+* LinkedIn
+
+Navigation should become more compact while scrolling.
+
+Include smooth scrolling.
+
+On mobile, use a clean animated menu.
+
+---
+
+# 9. HERO SECTION
+
+The Hero is the most important section.
+
+It must immediately communicate:
+
+> PRAVIN LAKHMAN
+
+> AI ENGINEER
+
+> Building intelligent systems with AI, ML and GenAI.
+
+Supporting technologies:
+
+Python
+AI/ML
+GenAI
+RAG
+Agentic AI
+Cloud
+React
+
+---
+
+## Hero visual concept
+
+Create an interactive centerpiece inspired by premium creative-development portfolios.
+
+Potential centerpiece:
+
+A dynamic AI-inspired 3D object / abstract neural structure / intelligent system visualization.
+
+It should:
+
+* respond to mouse movement
+* rotate subtly
+* react to cursor proximity
+* have depth
+* use controlled lighting
+* integrate with the background
+
+Do not use a generic robot.
+
+The object should feel abstract and technical.
+
+---
+
+## Hero animation sequence
+
+Initial load:
+
+1. Background appears
+2. Small atmospheric particles/noise appear
+3. Name reveals
+4. Role appears
+5. Supporting description appears
+6. CTA buttons enter
+7. 3D centerpiece becomes active
+8. Cursor interaction activates
+9. Scroll indicator appears
+
+Use staggered animation.
+
+The entire hero should feel cinematic.
+
+---
+
+# 10. HERO SCROLL TRANSITION
+
+This is important.
+
+When the user scrolls:
+
+Hero should not simply disappear.
+
+Create a cinematic transition.
+
+Example:
+
+Hero content:
+
+opacity ↓
+scale ↓
+translate ↓
+
+3D object:
+
+scale ↑
+rotation changes
+moves toward viewport
+
+Background:
+
+subtle transformation
+
+Then transition naturally into About.
+
+Use GSAP ScrollTrigger.
+
+Consider pinning the Hero if it improves the effect.
+
+Do NOT sacrifice mobile usability.
+
+---
+
+# 11. ABOUT SECTION
+
+Introduce Pravin as a developer.
+
+Content should be concise.
+
+Core positioning:
+
+Pravin is a Python Developer / AI Engineer passionate about building intelligent solutions.
+
+Focus areas:
+
+* AI/ML
+* Generative AI
+* Agentic AI
+* RAG
+* Python
+* FastAPI
+* React
+* Cloud
+
+Add animated statistics.
+
+Example:
+
+AI / ML
+GenAI
+Cloud
+Projects
+
+Do not fabricate numbers.
+
+Only use verified information.
+
+---
+
+# 12. SKILLS — AI TECH UNIVERSE
+
+Do NOT use a boring grid of skill cards.
+
+Create an interactive technology visualization.
+
+Center:
+
+PRAVIN
+
+Around it:
+
+Python
+AI / ML
+GenAI
+RAG
+Agentic AI
+FastAPI
+React
+TypeScript
+SQL
+TensorFlow
+PyTorch
+Scikit-learn
+LangGraph
+LangChain
+GCP
+
+Nodes can connect dynamically.
+
+When hovering a technology:
+
+* highlight the node
+* illuminate its connections
+* display a small information panel
+* animate related technologies
+
+Example:
+
+Hover Python:
+
+Python
+├── NumPy
+├── Pandas
+├── FastAPI
+├── ML
+└── Automation
+
+The interaction should remain performant.
+
+---
+
+# 13. EXPERIENCE SECTION
+
+Create an immersive vertical timeline.
+
+Primary experience:
+
+Wipro Technologies
+
+Role:
+
+GenAI Intern
+
+Location:
+
+Bangalore
+
+Duration:
+
+Jul 29 2025 – Oct 31 2025
+
+Show the experience through animated storytelling.
+
+Projects include:
+
+1. Gemini Language Translator / Gemini-based application
+2. ADA Compliance Checker
+3. Vision API Shelf Analysis
+4. RAG Chatbot
+
+All four projects used Google Cloud technologies.
+
+Do not overstate technologies.
+
+---
+
+# 14. WIPRO PROJECT PRESENTATION
+
+Instead of displaying four boring cards, create an interactive timeline.
+
+As the user scrolls:
+
+Timeline progresses.
+
+Project information changes.
+
+Visual representation changes.
+
+For each project show:
+
+* problem
+* solution
+* technology
+* result / purpose
+
+Keep descriptions concise.
+
+---
+
+# 15. FEATURED PROJECTS
+
+This is one of the most important sections.
+
+Use large cinematic project panels.
+
+Projects should include:
+
+## Project 01
+
+Customer Support Agent
+
+Stack:
+
+* LangGraph
+* RAG
+* FastAPI
+* Chroma
+* LLM
+* SQLite checkpointing
+
+Architecture:
+
+User
+↓
+Router
+↓
+Specialized Agent
+↓
+RAG / Knowledge
+↓
+Validator
+↓
+Response
+
+Show this architecture visually.
+
+---
+
+## Project 02
+
+AI Restock Manager / SmartStock Vision
+
+Stack:
+
+* Python
+* Flask/FastAPI depending on final implementation
+* React
+* YOLOv8
+* Supabase
+* Image analysis
+* Email notifications
+
+Show:
+
+Shelf Image
+↓
+Object Detection
+↓
+Product Count
+↓
+Inventory Comparison
+↓
+Variance
+↓
+Restock Decision
+
+Make the project visually understandable.
+
+---
+
+## Project 03
+
+Gemini Translator
+
+Show:
+
+Input speech/text
+↓
+Language processing
+↓
+Gemini
+↓
+Translation
+↓
+Text-to-Speech
+
+Include the actual technologies used.
+
+---
+
+## Project 04
+
+ADA Compliance Checker
+
+Show:
+
+Website URL
+↓
+Playwright
+↓
+Axe-core
+↓
+Accessibility Analysis
+↓
+WCAG Issues
+↓
+Severity Report
+
+---
+
+## Project 05
+
+Vision API Shelf Analyzer
+
+Show:
+
+Shelf Image
+↓
+Cloud Storage
+↓
+Google Vision API
+↓
+Object/Product Detection
+↓
+Analysis
+
+---
+
+# 16. PROJECT INTERACTION
+
+Project sections should be interactive.
+
+On hover:
+
+* image/visual moves slightly
+* typography shifts
+* cursor reacts
+* metadata appears
+* arrow moves
+* border/lighting changes subtly
+
+On click:
+
+Expand into detailed project experience.
+
+Possible transition:
+
+Card
+↓
+Expand
+↓
+Full-screen project view
+↓
+Architecture
+↓
+Technology
+↓
+Screenshots
+↓
+Demo / GitHub
+
+Do not make every project full-screen if it damages usability.
+
+---
+
+# 17. AI LAB
+
+This should be the portfolio's signature feature.
+
+Title:
+
+> AI LAB
+
+Subtitle:
+
+> Ask me anything about my work.
+
+Build a small AI assistant powered by the portfolio's knowledge.
+
+User can ask:
+
+"What projects did Pravin build?"
+
+"Tell me about his Wipro internship."
+
+"What technologies does he know?"
+
+"Explain the Customer Support Agent."
+
+"What is his experience with RAG?"
+
+The assistant should answer based on a curated portfolio knowledge base.
+
+Use:
+
+Frontend
+↓
+FastAPI
+↓
+RAG
+↓
+Knowledge Base
+↓
+LLM
+↓
+Streaming response
+
+Responses should stream naturally.
+
+Include:
+
+* typing indicator
+* message animation
+* clean chat interface
+* source/context indicator if useful
+* error handling
+
+Do not expose API keys in frontend code.
+
+---
+
+# 18. ENGINEERING PROCESS
+
+Create a section called:
+
+> HOW I BUILD
+
+Show the development process visually:
+
+Problem
+↓
+Research
+↓
+Architecture
+↓
+AI / ML
+↓
+Backend
+↓
+Frontend
+↓
+Cloud
+↓
+Testing
+↓
+Deployment
+
+Animate each stage on scroll.
+
+Each stage should contain a short explanation.
+
+This section should communicate engineering maturity.
+
+---
+
+# 19. CLOUD / ARCHITECTURE VISUAL
+
+Create a subtle infrastructure visualization.
+
+Example:
+
+React
+↓
+FastAPI
+↓
+AI / ML
+↓
+RAG
+↓
+Cloud
+
+Show technologies such as:
+
+Google Cloud
+Cloud Run
+Vertex AI
+Cloud Storage
+Artifact Registry
+
+Only display technologies actually used by the relevant projects.
+
+Do not imply that every project uses every technology.
+
+---
+
+# 20. ACHIEVEMENTS
+
+Create a minimal animated section.
+
+Include verified achievements such as:
+
+* Wipro GenAI Internship
+* Google Cloud Hackathon
+* NIT Trichy Competitive Programming
+* Zoho Young Creators
+* Web Designing Course
+
+Do not make this section visually louder than Projects.
+
+---
+
+# 21. CONTACT SECTION
+
+Ending should feel cinematic.
+
+Headline:
+
+> LET'S BUILD SOMETHING INTELLIGENT.
+
+Supporting text:
+
+Have an idea, project, or opportunity?
+
+Let's connect.
+
+Buttons:
+
+Email Me
+LinkedIn
+GitHub
+Resume
+
+Add subtle interaction.
+
+Do not use fake contact information.
+
+Use the actual information supplied in the project configuration.
+
+---
+
+# 22. FOOTER
+
+Minimal.
+
+Include:
+
+PRAVIN LAKHMAN
+
+AI ENGINEER
+
+Python • AI/ML • GenAI • RAG • Agentic AI
+
+GitHub
+LinkedIn
+Email
+
+Copyright.
+
+---
+
+# 23. COMPONENT ARCHITECTURE
+
+Use clean modular architecture.
+
+Suggested structure:
+
+src/
+
+components/
+
+Navbar
+CustomCursor
+FluidCursor
+MagneticButton
+SectionHeading
+AnimatedText
+NoiseBackground
+ParticleField
+ProjectPreview
+ProjectCard
+TechNode
+TechGraph
+Timeline
+AIChat
+LoadingScreen
+
+sections/
+
+Hero
+About
+Skills
+Experience
+Projects
+AILab
+EngineeringProcess
+Achievements
+Contact
+
+animations/
+
+heroAnimations
+scrollAnimations
+cursorAnimations
+pageTransitions
+projectAnimations
+
+data/
+
+projects
+skills
+experience
+achievements
+personal
+
+lib/
+
+animations
+utils
+api
+
+---
+
+# 24. DATA-DRIVEN CONTENT
+
+Do not hardcode repeated content into JSX.
+
+Create structured data.
+
+Example:
+
+projects.ts
+
+experience.ts
+
+skills.ts
+
+achievements.ts
+
+This should make future updates easy.
+
+---
+
+# 25. RESPONSIVENESS
+
+The website must work on:
+
+* large desktop
+* laptop
+* tablet
+* mobile
+
+Desktop can have the full cinematic experience.
+
+Mobile should prioritize:
+
+* readability
+* performance
+* navigation
+* touch interaction
+
+Do not simply shrink the desktop layout.
+
+Create intentional mobile layouts.
+
+Disable or simplify:
+
+* custom cursor
+* heavy WebGL
+* excessive parallax
+* expensive particle systems
+
+when necessary.
+
+---
+
+# 26. PERFORMANCE
+
+Performance is critical.
+
+Target:
+
+* smooth 60fps interactions where possible
+* optimized WebGL
+* lazy-loaded heavy components
+* code splitting
+* compressed images
+* minimal DOM particles
+* GPU-friendly transforms
+* no unnecessary re-renders
+
+Avoid animating:
+
+top
+left
+width
+height
+
+when transform can be used instead.
+
+Prefer:
+
+transform
+opacity
+
+Use requestAnimationFrame where appropriate.
+
+Clean up animation contexts and event listeners.
+
+---
+
+# 27. ACCESSIBILITY
+
+Implement:
+
+* semantic HTML
+* keyboard navigation
+* visible focus states
+* accessible buttons
+* proper aria labels
+* sufficient contrast
+* reduced-motion support
+
+If:
+
+prefers-reduced-motion
+
+is enabled:
+
+significantly reduce cinematic animations.
+
+The site must remain fully usable.
+
+---
+
+# 28. SEO
+
+Add:
+
+* proper title
+* meta description
+* Open Graph metadata
+* semantic headings
+* favicon
+* structured metadata where appropriate
+
+Title example:
+
+Pravin Lakhman — AI Engineer
+
+Do not keyword-stuff.
+
+---
+
+# 29. ERROR HANDLING
+
+AI Lab must gracefully handle:
+
+* API failure
+* network failure
+* timeout
+* empty responses
+* invalid input
+
+Show useful UI messages.
+
+Never expose:
+
+API keys
+internal errors
+stack traces
+
+to users.
+
+---
+
+# 30. SECURITY
+
+Never put:
+
+OPENAI_API_KEY
+GEMINI_API_KEY
+other secret keys
+
+in frontend environment variables that are exposed to the browser.
+
+All secret-dependent operations must happen server-side.
+
+---
+
+# 31. VISUAL DETAILS
+
+Add subtle:
+
+* film grain
+* noise
+* atmospheric particles
+* grid lines
+* glow
+* shadows
+* depth
+* masks
+* gradient transitions
+
+But keep them restrained.
+
+Every visual element should have a purpose.
+
+---
+
+# 32. TYPOGRAPHY
+
+Use a modern premium sans-serif.
+
+Recommended direction:
+
+Inter
+Manrope
+Space Grotesk
+Satoshi
+or another suitable modern font.
+
+Use large typography for major headings.
+
+Create strong hierarchy:
+
+Display
+↓
+Heading
+↓
+Body
+↓
+Metadata
+
+Avoid excessive font weights.
+
+---
+
+# 33. COLOR SYSTEM
+
+Start with:
+
+Background:
+near-black
+
+Primary text:
+off-white
+
+Secondary text:
+muted gray
+
+Accent:
+a distinctive AI/tech accent
+
+The accent can be used for:
+
+* cursor
+* highlights
+* CTA
+* active nodes
+* important metadata
+
+Do not make the entire website neon.
+
+---
+
+# 34. ANIMATION QUALITY STANDARD
+
+Every animation must answer:
+
+Why is this moving?
+
+If there is no meaningful answer, remove the animation.
+
+Prioritize:
+
+1. smoothness
+2. timing
+3. hierarchy
+4. responsiveness
+5. subtlety
+
+Do not prioritize:
+
+"more effects".
+
+---
+
+# 35. IMPORTANT — NO FAKE INFORMATION
+
+Do not invent:
+
+* companies
+* job titles
+* certifications
+* project results
+* user counts
+* performance metrics
+* awards
+* clients
+* technologies
+
+Use only verified information supplied in the project data.
+
+If information is missing, create a placeholder in the data layer rather than inventing it.
+
+---
+
+# 36. DEVELOPMENT WORKFLOW
+
+Do NOT attempt to build the entire application in one giant component.
+
+Implement incrementally.
+
+Phase 1:
+
+Project setup
+↓
+Design system
+↓
+Global styles
+↓
+Navbar
+↓
+Loading
+
+Phase 2:
+
+Hero
+↓
+Hero animation
+↓
+Fluid cursor
+↓
+3D centerpiece
+
+Phase 3:
+
+About
+↓
+Skills
+↓
+Tech visualization
+
+Phase 4:
+
+Experience
+↓
+Wipro timeline
+
+Phase 5:
+
+Projects
+↓
+Project interactions
+↓
+Project detail views
+
+Phase 6:
+
+AI Lab
+↓
+FastAPI
+↓
+RAG
+↓
+Streaming
+
+Phase 7:
+
+Engineering process
+↓
+Achievements
+↓
+Contact
+
+Phase 8:
+
+Responsive optimization
+↓
+Accessibility
+↓
+Performance
+↓
+SEO
+↓
+Deployment
+
+---
+
+# 37. DEVELOPMENT RULE
+
+Before implementing a major section:
+
+1. Understand its purpose
+2. Define its visual hierarchy
+3. Define its animation
+4. Define responsive behavior
+5. Build the component
+6. Test interaction
+7. Optimize performance
+8. Move to the next section
+
+Do not rush through sections.
+
+---
+
+# 38. FINAL QUALITY BAR
+
+Before considering the project complete, test:
+
+Desktop Chrome
+Desktop Firefox
+Mobile Chrome
+Mobile Safari
+
+Test:
+
+* mouse movement
+* cursor
+* scrolling
+* navigation
+* hover
+* keyboard navigation
+* project interactions
+* AI chat
+* mobile menu
+* reduced motion
+* slow network
+* API failure
+* mobile performance
+
+---
+
+# 39. MOST IMPORTANT CREATIVE DIRECTION
+
+The portfolio should feel like a **journey through an AI engineer's mind**.
+
+The user enters:
+
+INTRODUCTION
+
+↓
+
+IDENTITY
+
+↓
+
+SKILLS
+
+↓
+
+EXPERIENCE
+
+↓
+
+REAL PROJECTS
+
+↓
+
+ENGINEERING THINKING
+
+↓
+
+AI INTERACTION
+
+↓
+
+CONTACT
+
+Every section should naturally lead to the next.
+
+Do not make the website feel like a collection of unrelated animations.
+
+The entire page must feel like **one continuous experience**.
+
+---
+
+# 40. FINAL INSTRUCTION
+
+Build this as a serious production portfolio.
+
+Do not create a generic template.
+
+Do not overuse glassmorphism.
+
+Do not use random AI imagery.
+
+Do not sacrifice performance for effects.
+
+Do not sacrifice usability for animation.
+
+Do not copy the reference website.
+
+Instead, take inspiration from the reference's level of creativity and interaction and create a unique portfolio centered around:
+
+**PRAVIN LAKHMAN**
+
+**AI ENGINEER**
+
+**PYTHON • AI/ML • GENAI • RAG • AGENTIC AI • CLOUD**
+
+The final result should be visually impressive enough to grab attention, technically sophisticated enough to demonstrate engineering ability, and professional enough to send directly to recruiters.
+
+The portfolio itself should be treated as a flagship project.

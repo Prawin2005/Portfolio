@@ -1,0 +1,82 @@
+{
+  "profile": {
+    "name": "Prawin Lakhman",
+    "role": "AI Engineer & Python Developer",
+    "location": "Available Anywhere in India (Open to Relocate & Travel)",
+    "focus": "Generative AI, RAG, Agentic AI, Computer Vision, Cloud Applications",
+    "summary": "Prawin Lakhman is an AI Engineer and Python Developer specializing in building production-grade intelligent systems. He has hands-on experience developing multi-agent workflows with LangGraph, hybrid RAG pipelines, computer vision models with YOLOv8, and cloud deployments on Google Cloud Platform."
+  },
+  "wipro_internship": {
+    "company": "Wipro Technologies",
+    "location": "Bangalore",
+    "role": "GenAI Intern",
+    "duration": "Jul 29 2025 – Oct 31 2025",
+    "technologies": "Google Cloud Platform (Vertex AI, Cloud Run, Cloud Storage, Vision API), Python, FastAPI, Playwright, Axe-core",
+    "projects": [
+      {
+        "name": "Gemini Language Translator & Multimodal App",
+        "description": "Multilingual translation pipeline with cultural nuance preservation and streaming TTS audio synthesis using Gemini APIs on Cloud Run."
+      },
+      {
+        "name": "ADA Compliance Checker",
+        "description": "Automated web accessibility auditor running headless Playwright and Axe-core to generate instant WCAG 2.1 severity reports."
+      },
+      {
+        "name": "Vision API Shelf Analysis",
+        "description": "Automated retail shelf monitoring pipeline connecting Google Cloud Storage and Vision API to identify product out-of-stocks and planogram variance."
+      },
+      {
+        "name": "Enterprise RAG Chatbot",
+        "description": "Internal technical document knowledge retrieval chatbot using dense vector embeddings and grounded citations."
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "Customer Support Agent",
+      "category": "Agentic AI",
+      "stack": "LangGraph, Python, FastAPI, ChromaDB, SQLite Checkpointing, LLM APIs",
+      "architecture": "User Query -> Intent Router -> Specialized Sub-Agents -> RAG Knowledge Retrieval -> Validator Node -> Streaming Response",
+      "details": "Solves multi-step enterprise queries using stateful cyclical graphs with SQLite checkpointing and deterministic validation to prevent hallucinations."
+    },
+    {
+      "name": "SmartStock Vision / AI Restock Manager",
+      "category": "Computer Vision & Full-Stack",
+      "stack": "YOLOv8, Python, FastAPI, React, Supabase, OpenCV",
+      "architecture": "Shelf Camera Image -> YOLOv8 Object Detection -> Product Count per Zone -> ERP Inventory Comparison -> Variance Computation -> Automated Restock Alert",
+      "details": "Real-time automated retail auditing system detecting on-shelf product shortages with 45ms inference latency."
+    },
+    {
+      "name": "Gemini Translator",
+      "category": "GenAI / Multimodal",
+      "stack": "Google Gemini, Cloud Run, Python, FastAPI, TTS Synthesis",
+      "details": "Context-preserving multilingual translation with low-latency speech synthesis deployed on serverless GCP."
+    },
+    {
+      "name": "ADA Compliance Checker",
+      "category": "Automated QA & Accessibility",
+      "stack": "Playwright, Axe-core, Python, WCAG 2.1 Rules",
+      "details": "Headless browser crawler auditing web applications against WCAG 2.1 AA/AAA criteria with automated code fix generation."
+    },
+    {
+      "name": "Vision API Shelf Analyzer",
+      "category": "Cloud Computer Vision",
+      "stack": "Google Vision API, Google Cloud Storage, Cloud Run, Python",
+      "details": "Serverless event-driven image processing pipeline calculating shelf occupancy and missing SKU alerts."
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "TypeScript", "SQL", "JavaScript", "HTML5", "CSS3"],
+    "ai_ml": ["Generative AI", "RAG", "Agentic AI", "LangGraph", "LangChain", "PyTorch", "TensorFlow", "Scikit-learn", "YOLOv8", "ChromaDB", "FAISS", "Embeddings"],
+    "backend": ["FastAPI", "Uvicorn", "Pydantic", "REST APIs", "SSE Streaming", "AsyncIO", "SQLite", "Supabase", "PostgreSQL"],
+    "cloud": ["Google Cloud Platform (GCP)", "Cloud Run", "Vertex AI", "Cloud Storage", "Vision API", "Docker", "Artifact Registry"],
+    "frontend": ["React", "TypeScript", "Three.js", "WebGL", "Tailwind CSS", "GSAP", "Lenis", "Framer Motion"]
+  },
+  "achievements": [
+    "Wipro Technologies GenAI Internship (Jul-Oct 2025)",
+    "Google Cloud Hackathon Participant & Prototype Developer",
+    "NIT Trichy Competitive Programming Contest",
+    "Zoho Young Creators Application Engineering",
+    "Modern Web Engineering & UI/UX Certification"
+  ]
+}
