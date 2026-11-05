@@ -11,7 +11,8 @@ export async function queryAILab(
   prompt: string,
   callbacks: StreamCallbacks
 ): Promise<void> {
-  const BACKEND_URL = "http://localhost:8000/api/chat";
+  const BACKEND_BASE = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000";
+  const BACKEND_URL = `${BACKEND_BASE.replace(/\/$/, "")}/api/chat`;
 
   // Try live FastAPI backend first
   try {
