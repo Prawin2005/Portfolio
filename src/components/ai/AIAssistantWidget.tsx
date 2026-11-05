@@ -219,7 +219,7 @@ export const AIAssistantWidget = () => {
                   <Sparkles className="w-3 h-3 text-cyan-400" />
                 </span>
                 <span className="text-[10px] font-mono text-slate-400">
-                  RAG Grounded • Available India-wide
+                  Knowledge Grounded • Available India-wide
                 </span>
               </div>
             </div>

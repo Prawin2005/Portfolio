@@ -171,7 +171,7 @@ export const AILab = () => {
                     <Zap className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-semibold text-white font-mono">Semantic Vector Retrieval</h4>
+                    <h4 className="text-xs font-semibold text-white font-mono">Knowledge Base Retrieval</h4>
                     <p className="text-xs text-slate-400 mt-0.5">
                       Retrieves verified documentation, project pipelines, and tech stack details.
                     </p>
@@ -243,7 +243,7 @@ export const AILab = () => {
                     </span>
                     <span className="text-[10px] font-mono text-slate-400 flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                      Neural-RAG Runtime • Online
+                      AI Assistant Runtime • Online
                     </span>
                   </div>
                 </div>
