@@ -22,41 +22,41 @@ export const Experience = () => {
   ) || experienceData.projects[0];
 
   return (
-    <section id="experience" className="relative py-28 px-6 bg-[#04060a] border-t border-white/5">
+    <section id="experience" className="relative py-16 md:py-28 px-4 sm:px-6 bg-[#04060a] border-t border-white/5 overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 w-72 sm:w-96 h-72 sm:h-96 bg-cyan-500/5 rounded-full blur-[100px] sm:blur-[150px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="flex flex-col items-start mb-16">
+        <div className="flex flex-col items-start mb-12 sm:mb-16">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/20 bg-cyan-950/20 text-xs font-mono text-cyan-400 mb-3">
             <Briefcase className="w-3.5 h-3.5" />
             02 // INDUSTRY EXPERIENCE
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
             Wipro Technologies • GenAI Internship
           </h2>
-          <p className="text-slate-400 mt-2 max-w-2xl text-sm md:text-base">
+          <p className="text-slate-400 mt-2 max-w-2xl text-xs sm:text-sm md:text-base">
             Engineered 4 production-grade AI systems natively deployed on Google Cloud Platform, encompassing multimodal models, web accessibility engines, and computer vision retail pipelines.
           </p>
         </div>
 
         {/* Company Overview Header Card */}
-        <div className="tech-card rounded-2xl p-6 md:p-8 border border-white/10 mb-12 flex flex-col md:flex-row md:items-center justify-between gap-6 relative overflow-hidden">
-          <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
-              <Cloud className="w-6 h-6" />
+        <div className="tech-card rounded-2xl p-4 sm:p-6 md:p-8 border border-white/10 mb-8 sm:mb-12 flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6 relative overflow-hidden">
+          <div className="flex items-start gap-3 sm:gap-4">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+              <Cloud className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
             <div>
-              <div className="flex items-center gap-3 flex-wrap mb-1">
-                <h3 className="text-xl md:text-2xl font-bold text-white font-heading">
+              <div className="flex items-center gap-2 sm:gap-3 flex-wrap mb-1">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white font-heading">
                   {experienceData.company}
                 </h3>
-                <span className="px-2.5 py-0.5 rounded-full text-xs font-mono bg-cyan-950/60 border border-cyan-500/30 text-cyan-300">
+                <span className="px-2 sm:px-2.5 py-0.5 rounded-full text-[11px] sm:text-xs font-mono bg-cyan-950/60 border border-cyan-500/30 text-cyan-300">
                   {experienceData.role}
                 </span>
               </div>
-              <div className="flex items-center gap-4 text-xs font-mono text-slate-400 flex-wrap">
+              <div className="flex items-center gap-3 sm:gap-4 text-[11px] sm:text-xs font-mono text-slate-400 flex-wrap">
                 <span className="flex items-center gap-1.5">
                   <MapPin className="w-3.5 h-3.5 text-slate-500" />
                   {experienceData.location}
@@ -69,11 +69,11 @@ export const Experience = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:items-end">
-            <span className="text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-1">
+          <div className="flex flex-col md:items-end pt-2 md:pt-0 border-t md:border-t-0 border-white/5">
+            <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-1">
               Cloud Infrastructure Focus
             </span>
-            <span className="text-xs font-mono text-cyan-300 bg-white/[0.03] px-3 py-1.5 rounded-lg border border-white/5">
+            <span className="text-[11px] sm:text-xs font-mono text-cyan-300 bg-white/[0.03] px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg border border-white/5">
               {experienceData.cloudFocus}
             </span>
           </div>
@@ -136,43 +136,43 @@ export const Experience = () => {
 
           {/* Right Column: Deep-Dive Presentation Display */}
           <div className="lg:col-span-7">
-            <div className="tech-card rounded-2xl p-6 md:p-8 border border-white/10 relative overflow-hidden">
+            <div className="tech-card rounded-2xl p-4 sm:p-6 md:p-8 border border-white/10 relative overflow-hidden">
               {/* Project Title Header */}
-              <div className="border-b border-white/10 pb-5 mb-6">
+              <div className="border-b border-white/10 pb-4 sm:pb-5 mb-5 sm:mb-6">
                 <div className="flex items-center gap-2 mb-1.5">
-                  <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">
+                  <span className="text-[11px] sm:text-xs font-mono text-cyan-400 uppercase tracking-wider">
                     PROJECT SPOTLIGHT //
                   </span>
                   <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-950/50 text-cyan-300 border border-cyan-500/20">
                     Google Cloud Native
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold text-white font-heading">
+                <h3 className="text-xl sm:text-2xl font-bold text-white font-heading">
                   {activeProject.title}
                 </h3>
-                <p className="text-sm text-cyan-300/80 font-mono mt-1">
+                <p className="text-xs sm:text-sm text-cyan-300/80 font-mono mt-1">
                   {activeProject.subtitle}
                 </p>
               </div>
 
               {/* Problem vs Solution Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                <div className="p-4 rounded-xl bg-red-950/15 border border-red-500/20">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
+                <div className="p-3.5 sm:p-4 rounded-xl bg-red-950/15 border border-red-500/20">
                   <div className="flex items-center gap-1.5 text-xs font-mono text-red-400 uppercase mb-2">
                     <AlertCircle className="w-3.5 h-3.5" />
                     Problem Statement
                   </div>
-                  <p className="text-xs md:text-sm text-slate-300 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                     {activeProject.problem}
                   </p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-emerald-950/15 border border-emerald-500/20">
+                <div className="p-3.5 sm:p-4 rounded-xl bg-emerald-950/15 border border-emerald-500/20">
                   <div className="flex items-center gap-1.5 text-xs font-mono text-emerald-400 uppercase mb-2">
                     <CheckCircle className="w-3.5 h-3.5" />
                     Engineering Solution
                   </div>
-                  <p className="text-xs md:text-sm text-slate-300 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                     {activeProject.solution}
                   </p>
                 </div>

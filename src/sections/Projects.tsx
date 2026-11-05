@@ -13,19 +13,19 @@ export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
 
   return (
-    <section id="projects" className="relative py-28 px-6 bg-[#030508] border-t border-white/5">
+    <section id="projects" className="relative py-16 md:py-28 px-4 sm:px-6 bg-[#030508] border-t border-white/5 overflow-hidden">
       {/* Background ambient gradient */}
-      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/4 right-0 w-72 sm:w-[500px] h-72 sm:h-[500px] bg-cyan-500/5 rounded-full blur-[100px] sm:blur-[160px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-3 sm:gap-4">
           <div>
             <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/20 bg-cyan-950/20 text-xs font-mono text-cyan-400 mb-3 w-fit">
               <Layers className="w-3.5 h-3.5" />
               03 // FLAGSHIP PROJECTS
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
               Intelligent Systems & Architectures
             </h2>
           </div>
@@ -35,12 +35,12 @@ export const Projects = () => {
         </div>
 
         {/* Featured Projects List: Cinematic Panels */}
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-6 sm:gap-10">
           {projectsData.map((project) => (
             <div
               key={project.id}
               onClick={() => setSelectedProject(project)}
-              className="group tech-card rounded-2xl p-7 md:p-10 border border-white/10 hover:border-cyan-500/40 transition-all duration-300 cursor-pointer relative overflow-hidden"
+              className="group tech-card rounded-2xl p-4 sm:p-7 md:p-10 border border-white/10 hover:border-cyan-500/40 transition-all duration-300 cursor-pointer relative overflow-hidden"
             >
               {/* Subtle hover accent light */}
               <div className="absolute top-0 right-0 w-80 h-80 bg-cyan-500/0 group-hover:bg-cyan-500/5 rounded-full blur-3xl transition-all duration-500 pointer-events-none" />

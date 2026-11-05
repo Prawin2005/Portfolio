@@ -60,7 +60,7 @@ export default function App() {
       <Navbar />
 
       {/* Main Experience Flow */}
-      <main className="relative z-10 flex flex-col">
+      <main className="relative z-10 flex flex-col w-full overflow-x-hidden">
         <Hero />
         <About />
         <Experience />

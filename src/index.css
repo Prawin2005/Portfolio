@@ -17,6 +17,8 @@ html {
   background-color: #030508;
   color: #e2e8f0;
   scroll-behavior: auto;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 html.lenis, html.lenis body {
@@ -40,7 +42,10 @@ body {
   padding: 0;
   background-color: #030508;
   overflow-x: hidden;
+  max-width: 100vw;
   font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, .font-heading {

@@ -9,6 +9,7 @@ export const NeuralCore = () => {
     if (!container) return;
 
     // Scene, Camera, Renderer
+    const isMobile = window.innerWidth < 768;
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       45,
@@ -16,15 +17,15 @@ export const NeuralCore = () => {
       0.1,
       1000
     );
-    camera.position.z = 7;
+    camera.position.z = isMobile ? 9 : 7;
 
     const renderer = new THREE.WebGLRenderer({
-      antialias: true,
+      antialias: !isMobile,
       alpha: true,
       powerPreference: "high-performance"
     });
     renderer.setSize(container.clientWidth, container.clientHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1.5 : 2));
     container.appendChild(renderer.domElement);
 
     // Group for all core structures

@@ -41,30 +41,30 @@ export const CloudArchitecture = () => {
   ];
 
   return (
-    <section id="cloud" className="relative py-28 px-6 bg-[#04060a] border-t border-white/5">
+    <section id="cloud" className="relative py-16 md:py-28 px-4 sm:px-6 bg-[#04060a] border-t border-white/5 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="flex flex-col items-start mb-16">
+        <div className="flex flex-col items-start mb-12 sm:mb-16">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/20 bg-cyan-950/20 text-xs font-mono text-cyan-400 mb-3">
             <Cloud className="w-3.5 h-3.5" />
             05 // CLOUD TOPOLOGY
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
             Google Cloud Infrastructure
           </h2>
-          <p className="text-slate-400 mt-2 max-w-2xl text-sm md:text-base">
+          <p className="text-slate-400 mt-2 max-w-2xl text-xs sm:text-sm md:text-base">
             Architected for scalability, secure identity policies, and minimal serverless cold starts.
           </p>
         </div>
 
         {/* Cloud Tier Architecture Flow */}
-        <div className="tech-card rounded-2xl p-6 md:p-8 border border-white/10 mb-8 relative overflow-hidden">
-          <div className="text-xs font-mono uppercase tracking-wider text-cyan-400 mb-6 flex items-center justify-between">
+        <div className="tech-card rounded-2xl p-4 sm:p-6 md:p-8 border border-white/10 mb-8 relative overflow-hidden">
+          <div className="text-xs font-mono uppercase tracking-wider text-cyan-400 mb-6 flex flex-wrap items-center justify-between gap-2">
             <span>Production Deployment Pipeline</span>
             <span className="text-slate-500">GCP REGION: ASIA-SOUTH1</span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
             {cloudStack.map((item, idx) => (
               <div
                 key={idx}

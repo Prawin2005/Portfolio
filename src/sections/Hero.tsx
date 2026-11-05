@@ -22,20 +22,20 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-center items-center px-6 pt-24 pb-16 overflow-hidden tech-grid"
+      className="relative min-h-[92vh] sm:min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 pt-24 sm:pt-28 pb-14 sm:pb-20 overflow-hidden tech-grid"
     >
       {/* 3D Neural Centerpiece Scene */}
       <NeuralCore />
 
       {/* Atmospheric lighting layers */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-cyan-500/10 rounded-full blur-[100px] sm:blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/4 w-[240px] sm:w-[400px] h-[240px] sm:h-[400px] bg-indigo-500/10 rounded-full blur-[90px] sm:blur-[120px] pointer-events-none" />
 
       {/* Hero Content Container */}
-      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center">
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center w-full">
         {/* Status Pill Badge */}
         <div
-          className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-950/20 backdrop-blur-md mb-8 transition-all duration-700 delay-100 ${
+          className={`inline-flex items-center gap-2 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full border border-cyan-500/30 bg-cyan-950/40 backdrop-blur-md mb-6 sm:mb-8 transition-all duration-700 delay-100 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
           }`}
         >
@@ -43,14 +43,14 @@ export const Hero = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500" />
           </span>
-          <span className="text-xs font-mono tracking-wider text-cyan-300">
+          <span className="text-[11px] sm:text-xs font-mono tracking-wider text-cyan-300">
             SYSTEM ONLINE // AI & GENAI ENGINEER
           </span>
         </div>
 
         {/* Display Name */}
         <h1
-          className={`text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight text-white mb-4 font-heading transition-all duration-700 delay-200 ${
+          className={`text-4xl sm:text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-3 sm:mb-4 font-heading transition-all duration-700 delay-200 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
@@ -59,21 +59,21 @@ export const Hero = () => {
 
         {/* Role & Core Discipline */}
         <div
-          className={`flex items-center gap-3 text-lg sm:text-2xl md:text-3xl font-mono text-cyan-400 mb-6 font-medium transition-all duration-700 delay-300 ${
+          className={`flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-base sm:text-2xl md:text-3xl font-mono text-cyan-400 mb-4 sm:mb-6 font-medium transition-all duration-700 delay-300 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
-          <span className="text-slate-500">&gt;</span>
+          <span className="text-slate-500 hidden sm:inline">&gt;</span>
           <span>AI ENGINEER</span>
           <span className="text-slate-500">//</span>
-          <span className="text-slate-300 text-base sm:text-xl md:text-2xl font-sans">
+          <span className="text-slate-300 text-sm sm:text-xl md:text-2xl font-sans">
             Python Developer
           </span>
         </div>
 
         {/* Supporting Tagline */}
         <p
-          className={`text-base sm:text-xl text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed transition-all duration-700 delay-400 ${
+          className={`text-sm sm:text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2 transition-all duration-700 delay-400 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
@@ -85,14 +85,14 @@ export const Hero = () => {
 
         {/* Supporting Tech Tags Carousel / Badges */}
         <div
-          className={`flex flex-wrap justify-center gap-2 mb-10 max-w-xl transition-all duration-700 delay-500 ${
+          className={`flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-8 sm:mb-10 max-w-xl transition-all duration-700 delay-500 px-2 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
           {personalData.techHighlights.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 text-xs font-mono text-slate-300 bg-white/[0.04] border border-white/[0.08] rounded-md hover:border-cyan-500/40 hover:text-cyan-300 transition-colors"
+              className="px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-mono text-slate-300 bg-white/[0.04] border border-white/[0.08] rounded-md hover:border-cyan-500/40 hover:text-cyan-300 transition-colors"
             >
               {tech}
             </span>
@@ -101,16 +101,16 @@ export const Hero = () => {
 
         {/* CTA Buttons */}
         <div
-          className={`flex flex-wrap items-center justify-center gap-4 transition-all duration-700 delay-600 ${
+          className={`flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto px-4 sm:px-0 transition-all duration-700 delay-600 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
           <button
             onClick={() => scrollTo("projects")}
-            className="group px-6 py-3 rounded-full text-sm font-semibold text-[#030508] bg-gradient-to-r from-cyan-400 to-sky-400 hover:from-cyan-300 hover:to-sky-300 shadow-[0_0_25px_-5px_rgba(0,240,255,0.4)] transition-all cursor-pointer flex items-center gap-2"
+            className="w-full sm:w-auto justify-center group px-6 py-3 rounded-full text-sm font-semibold text-[#030508] bg-gradient-to-r from-cyan-400 to-sky-400 hover:from-cyan-300 hover:to-sky-300 shadow-[0_0_25px_-5px_rgba(0,240,255,0.4)] transition-all cursor-pointer flex items-center gap-2"
           >
             <Layers className="w-4 h-4" />
-            Explore Projects
+            <span>Explore Projects</span>
             <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </button>
 
@@ -118,10 +118,10 @@ export const Hero = () => {
             onClick={() => {
               window.dispatchEvent(new CustomEvent("open-ai-assistant"));
             }}
-            className="px-6 py-3 rounded-full text-sm font-medium text-cyan-300 bg-cyan-950/30 border border-cyan-500/30 hover:bg-cyan-900/40 hover:border-cyan-400 transition-all cursor-pointer flex items-center gap-2"
+            className="w-full sm:w-auto justify-center px-6 py-3 rounded-full text-sm font-medium text-cyan-300 bg-cyan-950/40 border border-cyan-500/40 hover:bg-cyan-900/40 hover:border-cyan-400 transition-all cursor-pointer flex items-center gap-2"
           >
             <Sparkles className="w-4 h-4 text-cyan-400 animate-pulse" />
-            Ask AI Assistant
+            <span>Ask AI Assistant</span>
           </button>
         </div>
 

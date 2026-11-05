@@ -11,32 +11,32 @@ import {
 
 export const About = () => {
   return (
-    <section id="about" className="relative py-28 px-6 bg-[#04060a] border-t border-white/5">
+    <section id="about" className="relative py-16 md:py-28 px-4 sm:px-6 bg-[#04060a] border-t border-white/5 overflow-hidden">
       {/* Background ambient glow */}
-      <div className="absolute top-1/2 -right-40 w-96 h-96 bg-cyan-500/5 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 -right-40 w-72 sm:w-96 h-72 sm:h-96 bg-cyan-500/5 rounded-full blur-[100px] sm:blur-[140px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="flex flex-col items-start mb-16">
+        <div className="flex flex-col items-start mb-12 sm:mb-16">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/20 bg-cyan-950/20 text-xs font-mono text-cyan-400 mb-3">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
             01 // PROFILE & PHILOSOPHY
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
             Engineering Systems That Think, Retrieve & Act.
           </h2>
         </div>
 
         {/* 2-Column Grid: Narrative vs Architecture Pillars */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-start">
           {/* Left Column: Narrative & Background */}
-          <div className="lg:col-span-7 flex flex-col gap-6 text-slate-300 leading-relaxed text-base md:text-lg">
-            <p className="text-white text-lg md:text-xl font-medium leading-relaxed">
+          <div className="lg:col-span-7 flex flex-col gap-5 sm:gap-6 text-slate-300 leading-relaxed text-sm sm:text-base md:text-lg">
+            <p className="text-white text-base sm:text-lg md:text-xl font-medium leading-relaxed">
               I am <span className="text-cyan-400 font-semibold">{personalData.name}</span>, a Python Developer and AI Engineer dedicated to moving beyond basic prompt wrappers into deterministically verifiable, production-ready intelligent software.
             </p>
 
             {personalData.extendedBio.map((paragraph, index) => (
-              <p key={index} className="text-slate-400">
+              <p key={index} className="text-slate-400 text-sm sm:text-base">
                 {paragraph}
               </p>
             ))}
@@ -46,7 +46,7 @@ export const About = () => {
               <h4 className="text-xs font-mono uppercase tracking-wider text-slate-400 mb-3">
                 Core Specialization Domains
               </h4>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
                 {[
                   { icon: Bot, label: "Agentic AI", sub: "LangGraph" },
                   { icon: Database, label: "RAG Systems", sub: "Chroma & Dense Search" },
@@ -55,13 +55,13 @@ export const About = () => {
                 ].map((item, idx) => (
                   <div
                     key={idx}
-                    className="p-3 rounded-xl bg-white/[0.02] border border-white/5 hover:border-cyan-500/30 transition-all flex flex-col gap-1.5"
+                    className="p-2.5 sm:p-3 rounded-xl bg-white/[0.02] border border-white/5 hover:border-cyan-500/30 transition-all flex flex-col gap-1 sm:gap-1.5"
                   >
-                    <item.icon className="w-5 h-5 text-cyan-400" />
-                    <span className="text-sm font-semibold text-white">
+                    <item.icon className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400" />
+                    <span className="text-xs sm:text-sm font-semibold text-white">
                       {item.label}
                     </span>
-                    <span className="text-[11px] font-mono text-slate-500">
+                    <span className="text-[10px] sm:text-[11px] font-mono text-slate-500">
                       {item.sub}
                     </span>
                   </div>
@@ -71,15 +71,15 @@ export const About = () => {
           </div>
 
           {/* Right Column: Verified Terminal Stats Card */}
-          <div className="lg:col-span-5">
-            <div className="tech-card rounded-2xl p-6 border border-white/10 relative overflow-hidden">
+          <div className="lg:col-span-5 w-full">
+            <div className="tech-card rounded-2xl p-4 sm:p-6 border border-white/10 relative overflow-hidden">
               {/* Terminal Titlebar */}
-              <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+              <div className="flex items-center justify-between border-b border-white/10 pb-3 sm:pb-4 mb-4 sm:mb-6">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-rose-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-amber-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
-                  <span className="text-xs font-mono text-slate-400 ml-2">
+                  <div className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
+                  <span className="text-xs font-mono text-slate-400 ml-1.5">
                     engineer.py
                   </span>
                 </div>
@@ -89,7 +89,7 @@ export const About = () => {
               </div>
 
               {/* Code / Profile Output in Pure Python */}
-              <div className="space-y-3 font-mono text-xs md:text-sm">
+              <div className="space-y-2.5 sm:space-y-3 font-mono text-[11px] sm:text-xs md:text-sm overflow-x-auto pb-1">
                 <div className="text-slate-500 italic">
                   # Production-ready AI Engineer profile
                 </div>

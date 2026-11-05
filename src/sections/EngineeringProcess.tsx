@@ -4,24 +4,24 @@ import { Workflow } from "lucide-react";
 
 export const EngineeringProcess = () => {
   return (
-    <section id="process" className="relative py-28 px-6 bg-[#030508] border-t border-white/5">
+    <section id="process" className="relative py-16 md:py-28 px-4 sm:px-6 bg-[#030508] border-t border-white/5 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="flex flex-col items-start mb-16">
+        <div className="flex flex-col items-start mb-12 sm:mb-16">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/20 bg-cyan-950/20 text-xs font-mono text-cyan-400 mb-3">
             <Workflow className="w-3.5 h-3.5" />
             04 // METHODOLOGY
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
             HOW I BUILD
           </h2>
-          <p className="text-slate-400 mt-2 max-w-2xl text-sm md:text-base">
+          <p className="text-slate-400 mt-2 max-w-2xl text-xs sm:text-sm md:text-base">
             From raw problem deconstruction to deterministic evaluation and cloud deployment, every intelligent system follows a rigorous engineering lifecycle.
           </p>
         </div>
 
         {/* 8-Stage Sequential Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {processStages.map((stage, idx) => (
             <div
               key={stage.step}

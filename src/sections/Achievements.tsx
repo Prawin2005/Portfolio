@@ -4,21 +4,21 @@ import { Trophy, CheckCircle } from "lucide-react";
 
 export const Achievements = () => {
   return (
-    <section id="achievements" className="relative py-24 px-6 bg-[#030508] border-t border-white/5">
+    <section id="achievements" className="relative py-16 md:py-24 px-4 sm:px-6 bg-[#030508] border-t border-white/5 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="flex flex-col items-start mb-14">
+        <div className="flex flex-col items-start mb-10 sm:mb-14">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/20 bg-cyan-950/20 text-xs font-mono text-cyan-400 mb-3">
             <Trophy className="w-3.5 h-3.5" />
             06 // VERIFIED MILESTONES
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
             Competitions & Recognition
           </h2>
         </div>
 
         {/* Minimal Timeline Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {achievementsData.map((item) => (
             <div
               key={item.id}
